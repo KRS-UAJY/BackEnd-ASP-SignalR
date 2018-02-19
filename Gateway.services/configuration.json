@@ -1,0 +1,21 @@
+﻿{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/mahasiswa/{npm}",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 80,
+      "DownstreamHost": "mahasiswa.services",
+      "UpstreamPathTemplate": "/api/mahasiswa/{npm}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/kelas/{prodi}",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 80,
+      "DownstreamHost": "kelas.services",
+      "UpstreamPathTemplate": "/api/kelas/{prodi}",
+      "UpstreamHttpMethod": [ "Get" ]
+    }
+  ],
+  "GlobalConfiguration": {}
+}
